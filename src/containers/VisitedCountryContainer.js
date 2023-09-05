@@ -17,12 +17,6 @@ const VisitedCountryContainer= () => {
         loadData();
     },[]);
 
-    return(
-        <>
-            
-            { visitedCountries ? <VisitedCountryList visitedCountries={visitedCountries}/> : <p>loading...</p> }
-        </>
-    )
 }
 
 export default VisitedCountryContainer;

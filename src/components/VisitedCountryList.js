@@ -1,17 +1,20 @@
-import VisitedCountry from "./VisitedCountry"
+import React from "react"
 const VisitedCountryList = ({visitedCountries}) => {
-
-    const mappedVisitedCountries = visitedCountries.map(visitedCountry => {
-        return <VisitedCountry visitedCountry={visitedCountry} key={visitedCountry.name.official}/>
-    })
-
-    return(
+    return (
         <>
-            <h2>Visited Countries</h2>
-            {/* {mappedVisitedCountries} */}
+            <h2>VisitedCountries</h2>
+            {visitedCountries && visitedCountries.length > 0 ? (
+                visitedCountries.map(country => (
+                    <div key={country.name.official}>
+                        <h3>{country.name.offical}</h3>
+                    </div>
+                ))
+            ) : (
+                <p>No visited countries at the moment.</p>
+            )}
         </>
-    )
-
-}
+    );
+};
 
 export default VisitedCountryList;
+
