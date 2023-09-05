@@ -1,4 +1,5 @@
 import { useState, useEffect} from "react";
+import CountryList from "../components/CountryList";
 
 const RESTCountriesContainer= () => {
 
@@ -19,7 +20,7 @@ const RESTCountriesContainer= () => {
     return(
         <>
             <h1>Countries Bucket List</h1>
-            
+            { countries ? <CountryList countries={countries}/> : <p>loading...</p> }
         </>
     )
 }
