@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.App{
+  display: inline-flex;
+
+}
+
+.country{
+  width: 100px;
+  height: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.visitedCountry{
+  width: 100px;
+  height: 100px;
+  
+  
+}

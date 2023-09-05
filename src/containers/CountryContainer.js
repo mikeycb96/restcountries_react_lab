@@ -4,7 +4,7 @@ import CountryList from "../components/CountryList";
 const CountryContainer= () => {
 
     const [countries, setCountries] = useState(null);
-    const [visitedCountries, setVisitedCountries] = useState(null)
+    
 
     const loadData = async () => {
         const response = await fetch("https://restcountries.com/v3.1/all");
@@ -19,7 +19,7 @@ const CountryContainer= () => {
 
     return(
         <>
-            <h1>Countries Bucket List</h1>
+            
             { countries ? <CountryList countries={countries}/> : <p>loading...</p> }
         </>
     )
