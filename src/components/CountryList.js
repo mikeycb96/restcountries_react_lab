@@ -7,6 +7,7 @@ const CountryList = ({countries}) => {
 
     return(
         <>
+            <h2>Countries</h2>
             {mappedCountries}
         </>
     )

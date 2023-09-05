@@ -4,9 +4,6 @@ const Country = ({country}) => {
         <>
             <h2>{country.name.common}</h2>
             <p>Capital City: {country.capital}</p>
-            <ul>
-               
-            </ul>
         </>
     )
 

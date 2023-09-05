@@ -1,7 +1,7 @@
 import { useState, useEffect} from "react";
 import CountryList from "../components/CountryList";
 
-const RESTCountriesContainer= () => {
+const CountryContainer= () => {
 
     const [countries, setCountries] = useState(null);
     const [visitedCountries, setVisitedCountries] = useState(null)
@@ -25,4 +25,4 @@ const RESTCountriesContainer= () => {
     )
 }
 
-export default RESTCountriesContainer;
+export default CountryContainer;

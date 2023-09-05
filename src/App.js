@@ -1,11 +1,18 @@
-import RESTCountriesContainer from './containers/RESTCountriesContainer'; 
+import RESTCountriesContainer from './containers/CountryContainer'; 
 import './App.css';
+import CountryContainer from './containers/CountryContainer';
 
 function App() {
   return (
-    <div>
-      <RESTCountriesContainer/>
+    <div className='App'>
+      <div className='country'>
+        <CountryContainer/>
+      </div>
+      <div className='visitedCountry'>
+        <VisitedCountry/>
+      </div>
     </div>
+
   );
 }
 
