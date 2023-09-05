@@ -3,7 +3,7 @@ import VisitedCountryList from "../components/VisitedCountryList";
 
 const VisitedCountryContainer= () => {
 
-    const [visitedCountries, setVisitedCountries] = useState(null);
+    const [visitedCountries, setVisitedCountries] = useState([]);
     
 
     const loadData = async () => {
