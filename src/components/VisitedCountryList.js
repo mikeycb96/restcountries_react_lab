@@ -8,7 +8,7 @@ const VisitedCountryList = ({visitedCountries}) => {
     return(
         <>
             <h2>Visited Countries</h2>
-            {mappedVisitedCountries}
+            {/* {mappedVisitedCountries} */}
         </>
     )
 
